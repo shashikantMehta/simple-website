@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>one page website</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="left">
+            <div class="burger" onclick="img()"  >
+                <i class="uil uil-bars"></i>
+            </div>
+            <div class="logo"  >
+                <img height="50px" src="./images/divine.png" alt="">
+            </div>
+            <div class="red-bar"></div>
+            <div class="para">
+                <img class="quote-right" height="20px" src="./images/quote-left.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> Aliquid harum quis maxime tempore.
+                    Accusantium <br> nam suscipit sed ipsa eoser!</p>
+                <img class="quote-left" height="20px" src="./images/quote-left.png" alt="">
+            </div>
+            <div class="small-photo" id="smallPhoto">
+                
+                <span><i class="uil uil-angle-left-b image1"  ></i></span>
+                <img class="lady-slide ladyPhoto" height="180px"   src="https://jooinn.com/images/vietnamese-lady-2.png" alt="">
+                <span><i class="uil uil-angle-right-b image2" ></i></span>
+                <div class="line3"><span>Allways</span></div>
+            </div>
+
+            <div class="vatical-nav">
+                <ul>
+                    <li><a href="">contact</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Delivery</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="nav">
+                <span><i class="uil uil-search"></i></span>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="">Trending</a></li>
+                        <li><a href="">Collection</a></li>
+                        <li><a href="">Relation</a></li>
+                        <li><a href="">Over Look</a></li>
+
+                    </ul>
+                </div>
+                <span><i class="uil uil-user"></i></span>
+            </div>
+            <div class="white-bar"><span class="red-rect"></span></div>
+
+            <div class="contents">
+                <h2>The World Best player </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Harum eligendi distinctio magni nihil officiis consequatur .
+                </p>
+            </div>
+
+            <div class="photo">
+                <span><i class="uil uil-align-center"></i></span>
+                <div class="photo-line"><span class="photo-dot"></span></div>
+                <span><i class="uil uil-angle-down"></i></span>
+                <img height="500px" id="lady" src="https://i.pinimg.com/originals/48/e8/03/48e803900da63ccad048163e7ea8fd2d.jpg" alt="">
+                <div class="red-line"><span></span></div>
+            </div>
+            <div class="social">
+                
+                <div> <h2>social</h2> </div>
+                <div>
+                <a href=""><i class="uit uit-twitter-alt"></i></a>
+                <a href=""> <i class="uit uit-facebook-f"></i> </a>
+                <a href=""><i class="uit uit-linkedin-alt"></i></a>
+                <a href=""><i class="uit uit-google"></i></a>
+            </div>
+            </div>
+
+
+        </div>
+
+    </div>
+         <!-- when we click burger ,we find two events: 1. big photo rotates 180 degree , 2. small photo -->
+             <!-- replace on x-exis  -->
+          <!-- when we click on right/left arrow small photo ratates 180 degee. -->
+        <script>
+            var lady= document.getElementById("lady")
+            var smallPhoto= document.getElementById("smallPhoto")
+            
+            function img(){
+                lady.style.transform = "rotateY(180deg)"
+                // smallPhoto.style.transform ="rotateY(180deg)"
+                smallPhoto.style.transform ="translateX(20px)"
+                
+            }
+            var image1 = document.querySelector(".image1")
+            var image2 = document.querySelector(".image2")
+
+            var ladyPhoto = document.querySelector(".ladyPhoto")
+            var ladySlide = document.querySelector(".lady-slide")
+
+
+
+            image1.addEventListener("click", ()=>{
+                ladySlide.classList.toggle("ladyPhoto")
+            })
+            image2.addEventListener("click", ()=>{
+                ladySlide.classList.toggle("ladyPhoto")
+            })
+        //By onclick function we can chance any event only one time  .
+        //By toggle() function we can chance event every click alternative. 
+
+
+        </script>
+
+</body>
+
+</html>
