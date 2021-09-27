@@ -190,7 +190,7 @@ body{
     display: flex;
 }
  .right .nav .navbar ul li a {
-   margin-left: 7rem;
+   margin-left: 3rem;
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
